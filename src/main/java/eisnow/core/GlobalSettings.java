@@ -17,7 +17,7 @@ public class GlobalSettings {
 	private static final Logger log = LoggerFactory.getLogger(GlobalSettings.class);
 
 	private Properties props;
-	
+
 	public GlobalSettings() {
 		props = new Properties();
 		String propFile = "global.properties";

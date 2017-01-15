@@ -9,7 +9,7 @@ import com.opensymphony.sitemesh.webapp.SiteMeshFilter;
 
 /**
  * Java Config for this application. Life begins here.
- * 
+ *
  * @author liqiang
  */
 public class AppInitializer extends
@@ -19,11 +19,10 @@ public class AppInitializer extends
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class<?>[] { GlobalSettings.class, DataConfig.class, ServiceConfig.class };
 	}
-	
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class<?>[] { WebConfig.class };
+		return new Class<?>[] { WebConfig.class, SecurityConfig.class };
 	}
 
 	@Override
